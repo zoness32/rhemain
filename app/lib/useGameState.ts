@@ -5,8 +5,8 @@ export default function useGameState(){
   const [players, setPlayers] = useState<Player[]>([]);
 
   const addPlayer = (player: Player) => {
-    const newPlayers = players.push(player);
-    setPlayers(newPlayers);
+    players.push(player);
+    setPlayers(players);
   }
 
   return {
